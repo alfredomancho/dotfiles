@@ -18,11 +18,11 @@ export PATH
 # aliases
 alias l='ls -al --color=auto'
 alias ll='ls -al --color=auto'
-#alias python='/usr/bin/python3'
-alias display='/usr/bin/eog'
+#alias display='/usr/bin/eog'
 alias dusort='du -s * |sort -n'
 alias acroread='evince'
 alias c='clear'
+alias vi='vim'
 
 #ln -s /usr/bin/python3.12 /usr/bin/python3
 # User specific aliases and functions
