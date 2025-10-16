@@ -1,0 +1,6 @@
+.config/gh/hosts.yml
+.ssh/config
+.ssh/id_*
+.aws/credentials
+.netrc
+*_history
