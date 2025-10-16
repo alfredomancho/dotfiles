@@ -1,0 +1,28 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# aliases
+alias l='ls -al --color=auto'
+alias ll='ls -al --color=auto'
+#alias python='/usr/bin/python3'
+alias display='/usr/bin/eog'
+alias dusort='du -s * |sort -n'
+alias acroread='evince'
+alias c='clear'
+
+#ln -s /usr/bin/python3.12 /usr/bin/python3
+# User specific aliases and functions
