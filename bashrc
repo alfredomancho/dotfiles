@@ -2,13 +2,13 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 # set DISPLAY
-if ["(hostname)" = "BONE-GTX" ]; then
-	export DISPLAY=$(ip route | grep default | awk '{print $3}'):0.0
-else
+if [ "$(hostname)" = "BONE-GTX" ]; 
+then
+    export DISPLAY=$(ip route | grep default | awk '{print $3}'):0.0
 fi
 
 
