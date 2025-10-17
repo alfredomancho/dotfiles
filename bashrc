@@ -5,6 +5,9 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# set DISPLAY
+export DISPLAY=$(ip route | grep default | awk '{print $3}'):0.0
+
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
@@ -20,9 +23,11 @@ alias l='ls -al --color=auto'
 alias ll='ls -al --color=auto'
 #alias display='/usr/bin/eog'
 alias dusort='du -s * |sort -n'
-alias acroread='evince'
 alias c='clear'
 alias vi='vim'
+alias acroread='explorer.exe'
+#alias display='display -geometry 800x600+560+240'
+
 
 #ln -s /usr/bin/python3.12 /usr/bin/python3
 # User specific aliases and functions
