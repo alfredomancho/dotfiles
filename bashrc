@@ -6,7 +6,11 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # set DISPLAY
-export DISPLAY=$(ip route | grep default | awk '{print $3}'):0.0
+if ["(hostname)" = "BONE-GTX" ]; then
+	export DISPLAY=$(ip route | grep default | awk '{print $3}'):0.0
+else
+fi
+
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
