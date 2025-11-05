@@ -29,6 +29,7 @@ alias dusort='du -s * |sort -n'
 alias c='clear'
 alias vi='vim'
 alias acroread='explorer.exe'
+alias view='vim -R'
 #alias display='display -geometry 800x600+560+240'
 
 
